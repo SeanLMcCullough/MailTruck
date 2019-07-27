@@ -1,11 +1,9 @@
-{
-  const container = require('./src/container')
+const container = require('./src/container')
 
-  const app = container.resolve('app')
+const app = container.resolve('app')
 
-  app.start()
-    .catch(error => {
-      app.logger.error(error.stack)
-      process.exit()
-    })
-}
+app.start()
+  .catch(error => {
+    app.logger.error(error.stack)
+    process.exit()
+  })
