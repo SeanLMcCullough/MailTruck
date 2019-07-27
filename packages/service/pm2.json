@@ -1,5 +1,5 @@
 {
-  "name": "hamstergram-api",
+  "name": "mailtruck-api",
   "script": "index.js",
   "instances": "2",
   "env": {
