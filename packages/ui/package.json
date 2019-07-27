@@ -1,0 +1,19 @@
+{
+  "name": "ui",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Sean McCullough <sean@seanmccullough.info>",
+  "homepage": "https://github.com/SeanLMcCullough/MailTruck#readme",
+  "license": "ISC",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanLMcCullough/MailTruck.git"
+  },
+  "scripts": {
+    
+  },
+  "bugs": {
+    "url": "https://github.com/SeanLMcCullough/MailTruck/issues"
+  }
+}

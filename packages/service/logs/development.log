@@ -1,0 +1,52 @@
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","level":"debug","message":"API routes:"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"message":"Connected to Redis","level":"info"}
