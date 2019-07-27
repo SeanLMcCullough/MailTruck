@@ -54,6 +54,7 @@ module.exports = ({ config, logger, redis }) => {
     })
 
     server.on('error', logger.error.bind(logger, 'SMTP'))
+    server.listen(Number(config.smtp.port), logger.info.bind(logger, 'SMTP Listening'))
     logger.info('SMTP server listening')
   }
 

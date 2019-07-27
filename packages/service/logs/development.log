@@ -50,3 +50,37 @@
 {"message":"API listening on port 4000","level":"info"}
 {"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
 {"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"level":"info","message":{"component":"smtp-server","tnx":"listen","host":"::","port":56010,"secure":false,"protocol":"SMTP"}}
+{"message":"SMTP Listening","level":"info"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"level":"info","message":{"component":"smtp-server","tnx":"listen","host":"::","port":56390,"secure":false,"protocol":"SMTP"}}
+{"level":"info","message":"SMTP Listening: "}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"level":"info","message":{"component":"smtp-server","tnx":"listen","host":"::","port":56465,"secure":false,"protocol":"SMTP"}}
+{"message":"SMTP Listening","level":"info"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"code":"EACCES","errno":"EACCES","syscall":"listen","address":"0.0.0.0","port":25,"level":"error","message":"SMTPlisten EACCES: permission denied 0.0.0.0:25","stack":"Error: listen EACCES: permission denied 0.0.0.0:25\n    at Server.setupListenHandle [as _listen2] (net.js:1241:19)\n    at listenInCluster (net.js:1306:12)\n    at Server.listen (net.js:1394:7)\n    at SMTPServer.listen (/Users/seanmccullough/git/MailTruck/packages/service/node_modules/smtp-server/lib/smtp-server.js:123:28)\n    at Object.start (/Users/seanmccullough/git/MailTruck/packages/service/src/interface/smtp/index.js:57:12)\n    at Object.start (/Users/seanmccullough/git/MailTruck/packages/service/src/app/index.js:3:10)\n    at Object.<anonymous> (/Users/seanmccullough/git/MailTruck/packages/service/index.js:5:5)\n    at Module._compile (internal/modules/cjs/loader.js:805:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:816:10)\n    at Module.load (internal/modules/cjs/loader.js:672:32)"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"level":"info","message":{"component":"smtp-server","tnx":"listen","host":"::","port":56708,"secure":false,"protocol":"SMTP"}}
+{"message":"SMTP Listening","level":"info"}
+{"message":"Connected to Redis","level":"info"}
+{"message":"SMTP server listening","level":"info"}
+{"message":"API listening on port 4000","level":"info"}
+{"0":"/health/","1":"/health","2":"/inbox/:inbox","3":"/inbox/:inbox","4":"/inbox","level":"debug","message":"API routes:"}
+{"code":"EACCES","errno":"EACCES","syscall":"listen","address":"0.0.0.0","port":25,"level":"error","message":"SMTPlisten EACCES: permission denied 0.0.0.0:25","stack":"Error: listen EACCES: permission denied 0.0.0.0:25\n    at Server.setupListenHandle [as _listen2] (net.js:1241:19)\n    at listenInCluster (net.js:1306:12)\n    at Server.listen (net.js:1394:7)\n    at SMTPServer.listen (/Users/seanmccullough/git/MailTruck/packages/service/node_modules/smtp-server/lib/smtp-server.js:123:28)\n    at Object.start (/Users/seanmccullough/git/MailTruck/packages/service/src/interface/smtp/index.js:57:12)\n    at Object.start (/Users/seanmccullough/git/MailTruck/packages/service/src/app/index.js:3:10)\n    at Object.<anonymous> (/Users/seanmccullough/git/MailTruck/packages/service/index.js:5:5)\n    at Module._compile (internal/modules/cjs/loader.js:805:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:816:10)\n    at Module.load (internal/modules/cjs/loader.js:672:32)"}
+{"message":"Connected to Redis","level":"info"}

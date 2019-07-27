@@ -19,7 +19,5 @@ module.exports = {
   http: {
     port: Number(process.env.HTTP_PORT || '4000'),
     cors: {}
-  },
-
-  smtp: {}
+  }
 }
