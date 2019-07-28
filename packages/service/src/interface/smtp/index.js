@@ -35,8 +35,10 @@ module.exports = ({ config, logger, redis }) => {
   const putUseCase = put({ redis })
 
   const handler = (stream, session, callback) => {
+    logger.info('onData handler')
     stream.on('end', async () => {
       const email = await parseEmail(stream)
+      logger.info({ email })
       const inbox = email.headers.get('to')
       if (!inbox) return callback()
       await putUseCase.store({ inbox, email })
