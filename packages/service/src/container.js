@@ -13,6 +13,8 @@ const smtp = require('./interface/smtp')
 
 const container = createContainer()
 
+logger.info(config)
+
 container.register({
   config: asValue(config),
   logger: asFunction(logger).singleton(),
