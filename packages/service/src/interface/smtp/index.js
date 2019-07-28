@@ -23,11 +23,10 @@ module.exports = ({ config, logger, redis }) => {
     const parser = new MailParser()
     stream.pipe(parser)
 
-    stream.on('data', logger.info.bind(logger, 'data'))
-    stream.on('end', logger.info.bind(logger, 'end'))
-    stream.on('close', logger.info.bind(logger, 'close'))
-    stream.on('error', logger.info.bind(logger, 'error'))
-    stream.on('end', logger.info.bind(logger, 'end'))
+    // stream.on('end', logger.info.bind(logger, 'end'))
+    // stream.on('close', logger.info.bind(logger, 'close'))
+    // stream.on('error', logger.info.bind(logger, 'error'))
+    // stream.on('end', logger.info.bind(logger, 'end'))
 
     parser.on('end', async email => {
       logger.info('parser.end')
@@ -43,8 +42,10 @@ module.exports = ({ config, logger, redis }) => {
       }
 
       const inbox = email.headers.get('to')
+      logger.info({ inbox })
       if (!inbox) return
       await putUseCase.store({ inbox, email })
+      callback()
     })
   }
 
