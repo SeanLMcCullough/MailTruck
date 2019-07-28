@@ -49,7 +49,6 @@ module.exports = ({ config, logger, redis }) => {
     server = new SMTPServer({
       logger,
       onData: handler,
-      onAuth: (auth, session, callback) => callback(new Error('Unauthorized user')),
       ...config.smtp
     })
 
