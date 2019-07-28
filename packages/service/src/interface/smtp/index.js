@@ -1,5 +1,5 @@
 const { SMTPServer } = require('smtp-server')
-const { simpleParser } = require('mailparser')
+const { MailParser } = require('mailparser')
 const { Readable } = require('stream')
 const htmlToText = require('html-to-text')
 
@@ -21,13 +21,9 @@ module.exports = ({ config, logger, redis }) => {
     logger.info('onData handler')
     logger.info({ session })
 
-    const readable = new Readable()
-    stream.pipe(readable)
-    stream.pipe(process.stdout); // debug
-    stream.on('end', async () => {
+    const parser = new MailParser()
+    parser.on('end', async email => {
       logger.info('parser.end')
-      logger.info({ readable })
-      const email = await simpleParser(readable)
       logger.info({ email })
 
       if (!email.text && !email.html) {
@@ -45,6 +41,8 @@ module.exports = ({ config, logger, redis }) => {
       await putUseCase.store({ inbox, email })
       callback()
     })
+    stream.pipe(parser)
+    stream.pipe(process.stdout)
   }
 
   let server
