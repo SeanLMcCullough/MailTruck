@@ -13,7 +13,7 @@ module.exports = {
   },
 
   smtp: {
-    port: Number(process.env.SMTP_PORT || '25')
+    port: Number(process.env.SMTP_PORT || '2500')
   },
 
   http: {
