@@ -12,37 +12,39 @@ const textToHtml = text => {
     .replace(/\s*(<br>)*\s*$/, '') // remoe ending br
 }
 
-const parseEmail = stream => new Promise((resolve) => {
-  const parser = new MailParser()
-
-  parser.on('end', mail => {
-      if (!mail.text && !mail.html) {
-          mail.text = ''
-          mail.html = '<div></div>'
-      } else if (!mail.html) {
-          mail.html = textToHtml(mail.text)
-      } else if (!mail.text) {
-          mail.text = htmlToText.fromString(mailhtml)
-      }
-
-      return resolve(mail)
-  })
-
-  stream.pipe(parser)
-})
-
 module.exports = ({ config, logger, redis }) => {
   const putUseCase = put({ redis })
 
   const handler = (stream, session, callback) => {
+    logger.info('----------------------------------')
     logger.info('onData handler')
-    stream.on('end', async () => {
-      const email = await parseEmail(stream)
+    logger.info({ session })
+
+    const parser = new MailParser()
+    stream.pipe(parser)
+
+    stream.on('data', logger.info.bind(logger, 'data'))
+    stream.on('end', logger.info.bind(logger, 'end'))
+    stream.on('close', logger.info.bind(logger, 'close'))
+    stream.on('error', logger.info.bind(logger, 'error'))
+    stream.on('end', logger.info.bind(logger, 'end'))
+
+    parser.on('end', async email => {
+      logger.info('parser.end')
       logger.info({ email })
+
+      if (!email.text && !email.html) {
+          email.text = ''
+          email.html = '<div></div>'
+      } else if (!email.html) {
+          email.html = textToHtml(email.text)
+      } else if (!email.text) {
+          email.text = htmlToText.fromString(email.html)
+      }
+
       const inbox = email.headers.get('to')
-      if (!inbox) return callback()
+      if (!inbox) return
       await putUseCase.store({ inbox, email })
-      callback()
     })
   }
 
