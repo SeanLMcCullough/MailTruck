@@ -21,7 +21,7 @@ module.exports = ({ config, logger, redis }) => {
     logger.info({ session })
 
     stream.pipe(process.stdout); // debug
-    stream.on('end', () => {
+    stream.on('end', async () => {
       logger.info('parser.end')
       const email = await simpleParser(stream)
       logger.info({ email })
