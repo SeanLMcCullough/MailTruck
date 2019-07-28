@@ -5,6 +5,7 @@ module.exports = ({ config, logger }) => {
 
   client.on('error', logger.error.bind(logger, 'Failed to connect to Redis'))
   client.on('connect', logger.info.bind(logger, 'Connected to Redis'))
+  client.on('monitor', logger.info.bind(logger, 'Redis'))
 
   return client
 }
