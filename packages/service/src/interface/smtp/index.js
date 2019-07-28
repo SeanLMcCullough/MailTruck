@@ -49,6 +49,7 @@ module.exports = ({ config, logger, redis }) => {
     server = new SMTPServer({
       logger,
       onData: handler,
+      authOptional: true,
       ...config.smtp
     })
 
